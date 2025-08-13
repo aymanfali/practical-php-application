@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         isset($name) && !empty($name) &&
         isset($color) && !empty($color)
     ) {
-
         header('Location: result.php?name=' . $name . '&color=' . $encodedColor, true, 303);
     } else {
         header('Location: index.html');
