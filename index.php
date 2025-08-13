@@ -15,6 +15,17 @@
         echo date("Y-m-d H:i:s e");
         ?>
     </p>
+
+    <h1>Favorite Color</h1>
+    <form action="action.php" method="POST">
+        <label for="name">User Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#5224db" required>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
